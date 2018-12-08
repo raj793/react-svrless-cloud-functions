@@ -2,7 +2,6 @@ import {formReducerConstants} from '../constants/formReducerConstants'
 
 let initialState = {
     ip: '',
-    recaptchaToken: '',
     values: {},
     isLoading: false,
     response: '',
@@ -18,11 +17,6 @@ export default function reducer(state=initialState, action) {
         case formReducerConstants.setIp: {
             const stateObj = {...state}
             stateObj.ip = action.ip
-            return stateObj
-        }
-        case formReducerConstants.setReCaptcha: {
-            const stateObj = {...state}
-            stateObj.recaptchaToken = action.token
             return stateObj
         }
         case formReducerConstants.setFormValues: {
