@@ -1,6 +1,6 @@
 # react-svrless-cloud-functions
 
-React Redux Application which uses Google Cloud functions as serverless backend and Google cloud storage for storage.
+React Redux Application which uses Google Cloud functions as serverless backend and Google cloud storage for storage, protected with Google Invisible Recaptcha.
 
 ## Available Scripts
 
