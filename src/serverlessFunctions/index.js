@@ -68,8 +68,15 @@ exports.formSubmit = async (req, res) => {
             throw new Error("File already exists!")
         }
 
-        //Convert file to JSON String
-        const jsonString = JSON.stringify(req.body)
+        //Convert object to JSON String
+        const userData = {
+            firstName: req.body.firstName,
+            lastName: req.body.lastName,
+            userAgent: req.body.userAgent,
+            ipAddress: req.body.ip,
+            email: req.body.email
+        }
+        const jsonString = JSON.stringify(userData)
 
         //Write file to sandbox
         fs.writeFile(`${filePath}`, jsonString, function (err) {
