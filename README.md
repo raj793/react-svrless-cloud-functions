@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# react-svrless-cloud-functions
+
+React Redux Application which uses Google Cloud functions as serverless backend and Google cloud storage.
 
 ## Available Scripts
 
