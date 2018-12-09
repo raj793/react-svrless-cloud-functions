@@ -3,7 +3,7 @@ import { Form } from 'antd';
 import './Root.css';
 import CustomForm from './components/form/CustomForm'
 
-class Root extends Component {
+export default class Root extends Component {
 
   render() {
     const WrappedForm = Form.create()(CustomForm)
@@ -18,5 +18,3 @@ class Root extends Component {
     )
   }
 }
-
-export default Root;
