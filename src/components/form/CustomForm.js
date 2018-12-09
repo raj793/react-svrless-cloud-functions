@@ -99,13 +99,13 @@ class CustomForm extends React.Component {
                 disabled={hasErrors(getFieldsError())}
                 className="login-form-button"
               >
+              {this.props.isLoading?
+              <Spin indicator={<Icon type="loading" style={{ fontSize: 24, color: 'white' }} spin />} />:`Submit`}
+              </Button>
               <Recaptcha
                   ref={ ref => this.recaptcha = ref }
                   sitekey={recaptchaSiteKey}
                   onResolved={ this.onResolved } />
-              {this.props.isLoading?
-              <Spin indicator={<Icon type="loading" style={{ fontSize: 24, color: 'white' }} spin />} />:`Submit`}
-              </Button>
             </FormItem>
           </Form>
         );
